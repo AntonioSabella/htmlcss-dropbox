@@ -1,0 +1,45 @@
+/* Variables */
+
+:root {
+   --dark-: black;
+   --light-: white;
+   --l-blue-: lightblue;
+   --d-blue-: blue; 
+}
+
+/* Commons */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Debug assegnare a body */
+
+
+/* Utility */
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/***********
+ Header
+ ***********/
+#navbar {
+    height: 40px;
+    background-color: blueviolet;
+}
+
+
+/***********
+ Main
+ **********/
+
+
+/**********
+ Footer
+ **********/
