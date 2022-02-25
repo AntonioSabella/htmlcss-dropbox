@@ -1,10 +1,14 @@
 /* Variables */
 
 :root {
-   --dark-: black;
-   --light-: white;
+   --dark: black;
+   --light: #F5F5F5;
+   --lighter: white;
    --l-blue-: lightblue;
    --d-blue-: blue; 
+   --primary: #0061FF;
+   --secondary: #B4D0F7;
+   --accent: #61082B;
 }
 
 /* Commons */
@@ -15,19 +19,33 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
 /* Debug assegnare a body, inserendo colori ed altezze fisse degli elementi sottostanti */
 
+.debug #navbar {
+    height: 82px;
+    background-color: blueviolet;
+}
 
 /* Utility */
 
-.row {
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
 
+.row {
+    width: 100%;
+}
+
 .container_large {
-    width: 900px;
+    width: 1100px;
     height: 500px;
     margin: 0 auto;
     background-color: brown;
@@ -110,14 +128,69 @@
 /***********
  Header
  ***********/
-#navbar {
-    height: 50px;
-    background-color: blueviolet;
+#site_header {
+    width: 100%;
 }
+
+.menu_left a, .menu_right a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu_left li, .menu_right li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+#navbar .logo_brand {
+    line-height: 32px;
+    float: left;
+    padding: 1rem;
+}
+
+.logo_brand>img {
+    vertical-align: sub;
+}
+
+#navbar .menu_left {
+    line-height: 62px;
+    float: left;
+    padding: 0 1rem;
+    
+}
+
+#navbar .menu_right {
+    line-height: 62px;
+    float: right;
+    padding: 0 1rem;
+}
+
+#navbar .cta_start {
+    line-height: 62px;
+    float: right;
+    padding: 0 1rem;
+}
+
+.cta_start > a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn {
+    background-color: var(--primary);
+    padding: 0.3rem 1rem;
+}
+
+/* Jumbo */
+
 
 #jumbo_work {
     height: 500px;
-    background-color: cornflowerblue;
+    background-color: var(--secondary);
 }
 
 
