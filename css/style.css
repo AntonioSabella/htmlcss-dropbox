@@ -23,6 +23,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 /* Debug assegnare a body, inserendo colori ed altezze fisse degli elementi sottostanti */
@@ -30,6 +34,11 @@ body {
 .debug #navbar {
     height: 82px;
     background-color: blueviolet;
+}
+
+.debug .container_large {
+    height: 500px;
+    background-color: brown;
 }
 
 /* Utility */
@@ -44,11 +53,10 @@ body {
     width: 100%;
 }
 
+
 .container_large {
     width: 1100px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: brown;
+    margin: 0 auto;  
 }
 
 .container_small {
@@ -132,6 +140,8 @@ body {
     width: 100%;
 }
 
+/* Navbar */
+
 .menu_left a, .menu_right a {
     text-decoration: none;
     color: var(--dark);
@@ -183,14 +193,60 @@ body {
 .btn {
     background-color: var(--primary);
     padding: 0.3rem 1rem;
+    color: var(--lighter);
 }
 
 /* Jumbo */
 
-
 #jumbo_work {
-    height: 500px;
+    height: 580px;
     background-color: var(--secondary);
+}
+
+h1.jumbo_maintext {
+    font-size: 62px;
+    color: var(--dark);
+    padding: 4rem 0 2rem 0;
+}
+
+#jumbo_text {
+    float: left;
+    width: 40%;
+}
+
+#jumbo_image {
+    float: left;
+    width: 60%;
+}
+
+#jumbo_image>img {
+    max-width: 100%;
+}
+
+#jumbo_text>.text_spacing {
+    width: 70%;
+}
+
+.text_spacing>p:first-child {
+    font-size: 13px;
+}
+
+.text_spacing>p:last-of-type {
+    font-size: 11px;
+    margin-top: 0.5rem;
+    
+}
+
+.text_spacing>a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.text_spacing>div {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 0.5rem;
 }
 
 
