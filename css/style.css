@@ -57,6 +57,10 @@ a {
     margin-top: 2rem;
 }
 
+.space-bottom {
+    margin-top: 2rem;
+}
+
 
 .container_large {
     width: 1100px;
@@ -641,23 +645,45 @@ li > .blue_check {
  **********/
 .bg_footer {
     background-color: black;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
+    padding: 3rem 6rem;
 }
 
-
- .cl_footer-20 {
-    width: 175px;
-    height: 500px;
-    background-color: yellow;
+.cl_footer-20 {
+    width: 20%;
+  /*   height: 500px; */
+   /*  background-color: yellow; */
     float: left;
  }
  
  .cl_footer-20space {
-     margin: 0 2px;
+     margin: 0 0.5;
  }
 
+ .cl_footer-20>h5 {
+    color: var(--lighter);
+    font-size: 20px;
+ }
+
+ .cl_footer-20 a {
+    color: var(--lighter);
+    font-size: 10px;
+ }
+
+ .footer_bottom {
+     margin-top: 6rem;
+ }
+
+ .footer_bottom>hr {
+    max-width: 5%;
+ }
+
+
  #language_selection {
-     width: 200px;
-     height: 100px;
-     background-color: cadetblue;
+     width: 100px;
+     height: 50px;
+    /*  background-color: cadetblue; inserire in Debug */
+     margin: 3rem 0 0 0;
+     color: rgba(255, 255, 255, 0.514);
+     font-size: 13px;
  }
