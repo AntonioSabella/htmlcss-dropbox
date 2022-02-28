@@ -755,12 +755,17 @@ li > .blue_check {
 }
 
 .cl-100_answer {
-    font-size: 12px;
-    display: none;
+    font-size: 0px;
+    position: relative;
+    min-width: 200px;
+    min-height: 50px;
 }
-span.show_answer:hover .cl-100_answer {
-   display: block;
-   position: absolute;
+
+.cl-20{
+    display: block;
+}
+.cl-100_answer:hover {
+   font-size: 12px;
     
 }
 
