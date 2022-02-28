@@ -27,6 +27,11 @@ a {
     text-decoration: none;
 }
 
+.fas {
+    color: var(--dark);
+}
+
+
 
 
 /* Debug assegnare a body, inserendo colori ed altezze fisse degli elementi sottostanti */
@@ -80,16 +85,27 @@ a {
     background-color: chartreuse; da inserire in debug */
 }
 
-.cl-25 {
-    width: 260px;
-/*     height: 700px;
+.cl-icon {
+    width: 10%;
+    float: left;
+}
+
+.cl-text {
+    width: 90%;
+    float: left;
+}
+
+.cl-32 {
+    width: 32%;
+    height: 800px;
+    /* 
     background-color: orange;  regole da inserire in debug. Valutare se altezza fissa vada lasciata*/
     float: left;
     border: 1px solid var(--l-blue-);
 }
 
-.cl_25space {
-    margin-left: 9px;
+.cl_32space {
+    margin-left: 15px;
 }
 
 .cl-100 {
@@ -326,6 +342,12 @@ input[type="radio"]{
     font-size: 12px;
 }
 
+.billing_perks {
+    margin-top: 1.5rem;
+    font-size: 12px;
+    font-weight: 500;
+}
+
 .top_path>p {
     font-size: 12px;
     margin: 1rem 0;
@@ -359,6 +381,8 @@ input[type="radio"]{
     margin-top: 1.5rem;
 }
 
+
+
 .bottom_path>ul {
     list-style: none;
     margin-top: 1rem;  
@@ -367,6 +391,7 @@ input[type="radio"]{
 .bottom_path li {
     margin: 0.8rem 0;
     font-size: 12px;
+   
 }
 
 li > .blue_check {
