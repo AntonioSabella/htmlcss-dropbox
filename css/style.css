@@ -11,7 +11,7 @@
    --accent: #61082B;
 }
 
-/* Commons */
+/* #region Commons */
 
 * {
     margin: 0;
@@ -31,10 +31,9 @@ a {
     color: var(--dark);
 }
 
+/* #endregion Commons */
 
-
-
-/* Debug assegnare a body, inserendo colori ed altezze fisse degli elementi sottostanti */
+/* #region Debug */
 
 .debug #navbar {
     height: 82px;
@@ -45,8 +44,32 @@ a {
     height: 500px;
     background-color: brown;
 }
+.debug.container_small {
+    height: 800px;
+    background-color: aquamarine;
+}
 
-/* Utility */
+.debug.cl_footer-20 {
+    height: 500px;
+    background-color: yellow;
+}
+
+.debug.container_full {
+    height: 700px;
+    background-color: chartreuse;
+}
+
+.debug.cl-32 {
+    background-color: orange;
+}
+
+.debug.cl-100 {
+    height: 200px;
+    background-color: yellow;
+}
+/* #endregion Debug */
+
+/* #region Utility */
 
 .row::after {
     content: "";
@@ -74,16 +97,15 @@ a {
 
 .container_small {
     width: 800px;
-  /*   height: 800px; da inserire in debug*/
+ 
     margin: 0 auto;
-  /*   background-color: aquamarine; da inserire in debug */
+ 
 }
 
 .container_full {
     width: 100%;
-/*     height: 700px;
-    background-color: chartreuse; da inserire in debug */
 }
+
 
 .cl-icon {
     width: 10%;
@@ -98,11 +120,10 @@ a {
 .cl-32 {
     width: 32%;
     height: 800px;
-    /* 
-    background-color: orange;  regole da inserire in debug. Valutare se altezza fissa vada lasciata*/
     float: left;
     border: 1px solid var(--l-blue-);
 }
+
 
 .cl_32space {
     margin-left: 15px;
@@ -110,8 +131,6 @@ a {
 
 .cl-100 {
     width: 100%;
-/*     height: 200px;
-    background-color: yellow; da inserire in debug*/
     float: left;
     border: 1px solid var(--l-blue-);
     margin-top: 2rem;
@@ -169,9 +188,11 @@ a {
     text-align: center;
     
 }
-/***********
- Header
- ***********/
+
+/* #endregion Utility */
+
+/* #region Header */
+
 #site_header {
     width: 100%;
 }
@@ -285,12 +306,12 @@ h1.jumbo_maintext {
     margin-top: 0.5rem;
 }
 
+/* #endregion Header */
 
+/* #region Main */
 
+/* section bg_price */
 
-/***********
- Main
- **********/
 .bg_price {
     margin: 7rem 0;
 }
@@ -381,8 +402,6 @@ input[type="radio"]{
     margin-top: 1.5rem;
 }
 
-
-
 .bottom_path>ul {
     list-style: none;
     margin-top: 1rem;  
@@ -433,6 +452,8 @@ li > .blue_check {
     padding: 0.3rem 3rem;
 }
 
+/* /section bg_price */
+
 /* section bg_dropcontact */
 
 .bg_dropcontact {
@@ -461,7 +482,10 @@ li > .blue_check {
     font-weight: 500;
 }
 
+/* /section bg_dropcontact */
+
 /* section bg_dropbusiness */
+
 .container_small>h2 {
     margin-bottom: 2rem;
 }
@@ -480,6 +504,8 @@ li > .blue_check {
     color: var(--dark);
     text-decoration: underline;
 }
+
+/* /section bg_dropbusiness */
 
 /* section bg_dropteam */
 
@@ -502,7 +528,7 @@ li > .blue_check {
 
 /* /section bg_dropteam */
 
-
+/* section bg_partneragency */
 
 .cl_full-30 {
     width: 30%;
@@ -583,8 +609,6 @@ li > .blue_check {
     filter:  invert(1);
 }
 
-
-
 .cl_full-40 {
     width: 40%;
     height: 400px;
@@ -617,8 +641,6 @@ li > .blue_check {
     font-size: 15px;
 }
 
-
-
 .cl_full-100 {
     width: 100%;
    /*  height: 300px; da inserire in debug */
@@ -641,6 +663,9 @@ li > .blue_check {
     color: var(--dark);
 }
 
+/* /section bg_partneragency */
+
+
 /* section bg_faq */
 
 .bg_faq {
@@ -658,16 +683,26 @@ li > .blue_check {
     vertical-align: middle;
 }
 
-.faq span {
-    display: inline-block;
+.show_answer {
     vertical-align: middle;
     font-size: 20px;
 }
 
+.cl-100_answer {
+    font-size: 12px;
+    display: none;
+}
+span.show_answer:hover .cl-100_answer {
+   display: block;
+   position: absolute;
+    
+}
 
-/**********
- Footer
- **********/
+/* /section bg_faq */
+
+/* #endregion Main */
+
+/* #region Footer */
 .bg_footer {
     background-color: black;
     margin: 2rem 0 0 0;
@@ -676,10 +711,10 @@ li > .blue_check {
 
 .cl_footer-20 {
     width: 20%;
-  /*   height: 500px; */
-   /*  background-color: yellow; */
-    float: left;
+     float: left;
  }
+
+
  
  .cl_footer-20space {
      margin: 0 0.5;
@@ -710,5 +745,11 @@ li > .blue_check {
     /*  background-color: cadetblue; inserire in Debug */
      margin: 3rem 0 0 0;
      color: rgba(255, 255, 255, 0.514);
-     font-size: 13px;
+     font-size: 13px; 
  }
+
+ #language_selection>span {
+    margin-right: 4px;
+ }
+
+/* #endregion Footer */
